@@ -20,7 +20,7 @@ function Remove-CloneFolder {
     }
 
     process {
-	$sourceRoot      = [System.IO.Path]::GetFullPath($Source).TrimEnd('\')      + '\'
+	    $sourceRoot      = [System.IO.Path]::GetFullPath($Source).TrimEnd('\')      + '\'
         $destinationRoot = [System.IO.Path]::GetFullPath($Destination).TrimEnd('\') + '\'
         
 
@@ -43,16 +43,15 @@ function Remove-CloneFolder {
             throw "La carpeta origen no existe: $Source"
         }
 
-	Write-Host "Validacion C - $(-not $dest_src)"
+	    Write-Host "Validacion C - $(-not $dest_src)"
         if ($dest_src) {
             throw "El destino no puede estar dentro del origen."
         }
 
         Write-Host "Validacion D - $(-not $src_dest)"
-	if ($src_dest) {
+	    if ($src_dest) {
             throw "El origen no puede estar dentro del destino."
         }
-
             ### Fin Validaciones ###
 
         if ($PSCmdlet.ShouldProcess($Destination, "Eliminar carpeta $Destination y clonar desde $Source")) {
