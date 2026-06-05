@@ -1,4 +1,3 @@
-# Backup-Robocopy-Module
 # Portable Disk Backup Script 💽
 ### PowerShell module for backing up a removable Disk Drive
 <div>
