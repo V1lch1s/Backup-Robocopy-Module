@@ -19,7 +19,7 @@ Remove-Module Respaldos
 
 ### 2. Import module
 ```powershell
-Import-Module C:/route/to/PSModuleW'Robocopy/Respaldos.psm1
+Import-Module C:/route/to/PSModuleW´Robocopy/Respaldos.psm1
 ```
 
 ### 3. Check if the code is the last modified (Optional)
